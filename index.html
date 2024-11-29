@@ -3,10 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>Heading one</h1>
-    
+  <!-- Navbar -->
+  <header class="flex justify-between items-center p-6 mx-4">
+    <img class="w-16 h-auto" src="logo.jpg" alt="Logo">
+    <i class="fa-solid fa-bars text-[#7c4ee4] text-3xl sm:hidden"></i>
+    <nav class="hidden sm:flex gap-6 items-center">
+      <ul class="flex gap-6 text-lg">
+        <li class="text-[#7c4ee4]">Blog</li>
+        <li>About</li>
+      </ul>
+      <i class="fa-solid fa-magnifying-glass text-xl"></i>
+      <button class="bg-[#7c4ee4] text-white px-6 py-2 rounded-lg">Count Us</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-[#7c4ee4] text-white p-6 sm:flex sm:justify-between sm:items-center">
+    <div class="sm:w-1/2">
+      <p class="text-xl">Feature Post</p>
+      <h1 class="text-4xl font-bold mt-4">How AI Will <br> Change the Future</h1>
+      <p class="mt-6 sm:mt-8 sm:text-lg">
+        Hic provident repellat sapiente voluptatibus vero minima delectus asperiores quas porro quae. Necessitatibus optio hic vel esse enim cumque ducimus assumenda ratione!
+      </p>
+      <button class="bg-white text-black px-8 py-3 rounded-lg mt-6">Read More</button>
+    </div>
+    <img class="w-full mt-6 rounded-lg sm:w-1/2 sm:mt-0 sm:h-auto" src="swir1.jpg" alt="Hero Image">
+  </section>
+
+  <!-- Blog Posts Section -->
+  <section class="p-6">
+    <h2 class="text-3xl font-bold text-center">Our Recent Posts</h2>
+    <div class="mt-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+      <div>
+        <img class="w-full rounded-lg" src="feer.jpg" alt="Post Image">
+        <h3 class="text-xl font-bold mt-4">Development</h3>
+        <p class="text-gray-500">16 March 2023</p>
+        <h2 class="text-2xl font-bold mt-2">How to Make a Game Look More Attractive</h2>
+        <p class="mt-4 text-gray-700">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates nam dolore.
+        </p>
+        <button class="text-[#7c4ee4] mt-4">Read More...</button>
+      </div>
+      <!-- Repeat the same structure for other posts -->
+    </div>
+  </section>
+
+  <!-- Subscription Section -->
+  <footer class="bg-[#7c4ee4] text-white text-center p-10 mt-10">
+    <h2 class="text-3xl font-bold">Get Our Stories Delivered to Your Inbox</h2>
+    <form class="mt-6 flex justify-center gap-4">
+      <input class="px-4 py-2 rounded-lg" type="email" placeholder="Your Email">
+      <button class="bg-white text-black px-6 py-2 rounded-lg">Get Started</button>
+    </form>
+    <p class="mt-6">Submit by 9 PM today for a response tomorrow!</p>
+    <div class="mt-6">
+      <img class="mx-auto w-20 h-auto" src="logo.jpg" alt="Logo">
+      <ul class="flex justify-center gap-6 mt-4">
+        <li>Home</li>
+        <li>Blog</li>
+        <li>About</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <p class="mt-10">© 2023 Ideapeel Inc. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
